@@ -13,9 +13,9 @@ def check(url):
 	r = requests.get(url)
 	print("\033[33m" + url)
 	if r.status_code == 404:
-		print("\033[31mСайт не рабочий!")
+		print("\033[31mСайт не рабочий! | Site not working!")
 	else:
-		print("\033[32mСайт рабочий!")
+		print("\033[32mСайт рабочий!| Site is working!")
 		file.write('\n' + url)
 	gen()
 sys.setrecursionlimit(999999999)
